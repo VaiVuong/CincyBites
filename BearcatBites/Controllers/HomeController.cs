@@ -33,6 +33,11 @@ namespace BearcatBites.Controllers
             return View();
         }
 
+        public IActionResult DailySpotlight()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
