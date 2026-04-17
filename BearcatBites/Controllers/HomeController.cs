@@ -23,16 +23,6 @@ namespace BearcatBites.Controllers
             return View();
         }
 
-        public IActionResult ExploreBites()
-        {
-            return View();
-        }
-        
-        public IActionResult ExploreSips()
-        {
-            return View();
-        }
-
         public IActionResult DailySpotlight()
         {
             return View();

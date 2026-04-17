@@ -30,16 +30,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEYWlseVNwb3RsaWdodC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Chris/source/repos/BearcatBites/BearcatBites/Views/Home/ExploreBites.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFeHBsb3JlQml0ZXMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Chris/source/repos/BearcatBites/BearcatBites/Views/Home/ExploreSips.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFeHBsb3JlU2lwcy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Chris/source/repos/BearcatBites/BearcatBites/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Chris/source/repos/BearcatBites/BearcatBites/Views/RestaurantRecommendation/ExploreBites.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdGF1cmFudFJlY29tbWVuZGF0aW9uXEV4cGxvcmVCaXRlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Chris/source/repos/BearcatBites/BearcatBites/Views/RestaurantRecommendation/ExploreSips.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdGF1cmFudFJlY29tbWVuZGF0aW9uXEV4cGxvcmVTaXBzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Chris/source/repos/BearcatBites/BearcatBites/Views/Shared/Error.cshtml]
