@@ -45,7 +45,7 @@ namespace BearcatBites.Data
                     Restaurant = "Masala Theory Indian Restaurant",
                     Description = "Hollow, crispy fried shell (puri) filled with a mixture of spiced potatoes, chickpeas, and onions, then submerged in tangy, flavored water (pani)",
                     ImagePath = "/images/items/542548a3-24c2-4716-a38c-e5d4217acbf3.png",
-                    Type = ItemType.Sip
+                    Type = ItemType.Bite
                 }
             };
 
