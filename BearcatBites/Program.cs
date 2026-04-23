@@ -6,11 +6,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-// Add DbContext
 builder.Services.AddDbContext<BearcatBitesContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("BearcatBitesContext")));
 
-// Add session support for admin authentication
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 {
@@ -21,7 +19,6 @@ builder.Services.AddSession(options =>
 
 var app = builder.Build();
 
-// Seed the database with initial data
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
