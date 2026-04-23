@@ -1,5 +1,7 @@
+using BearcatBites.Data;
 using BearcatBites.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 
 namespace BearcatBites.Controllers
@@ -7,10 +9,12 @@ namespace BearcatBites.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly BearcatBitesContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, BearcatBitesContext context)
         {
             _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()
@@ -23,9 +27,19 @@ namespace BearcatBites.Controllers
             return View();
         }
 
-        public IActionResult DailySpotlight()
+        public async Task<IActionResult> DailySpotlight()
         {
-            return View();
+            var items = await _context.FoodItems.ToListAsync();
+
+            if (items.Count == 0)
+            {
+                return View(null);
+            }
+
+            var random = new Random();
+            var randomItem = items[random.Next(items.Count)];
+
+            return View(randomItem);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

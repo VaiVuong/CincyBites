@@ -1,5 +1,6 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\items\2bf3b1cc-4abf-4487-815a-0b1bcf2f0ce8.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -55,6 +56,15 @@ wwwroot\lib\jquery-validation\dist\jquery.validate.js
 wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
 wwwroot\lib\jquery-validation\LICENSE.md
 wwwroot\lib\jquery\dist\jquery.js
-wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
+wwwroot\lib\jquery\dist\jquery.min.js
+wwwroot\images\items\086a4fa3-b957-45c2-8c5f-7f2f19009c30.png
+wwwroot\images\items\be39eab7-6792-4e66-ac49-bc619a6b305b.png
+wwwroot\images\items\a79268b7-808e-40e6-aff4-9ef43314a410.png
+wwwroot\images\items\542548a3-24c2-4716-a38c-e5d4217acbf3.png
+wwwroot\images\items\564081e9-bb15-4687-a9d5-77d98495ced3.png
+wwwroot\images\items\26e04506-aef8-42ba-a7ab-bd401a25b02c.png
+wwwroot\images\items\dae9d8be-147b-45d7-853e-dfaeaa0adcb6.png
+wwwroot\images\items\9ef7d9df-2dce-41cc-968c-4f7432fd95f8.png
+wwwroot\images\items\6fbeedad-4edd-425a-ad1a-1d0780475245.png

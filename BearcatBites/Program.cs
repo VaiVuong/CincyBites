@@ -8,7 +8,7 @@ builder.Services.AddControllersWithViews();
 
 // Add DbContext
 builder.Services.AddDbContext<BearcatBitesContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("BearcatBitesContext")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("BearcatBitesContext")));
 
 // Add session support for admin authentication
 builder.Services.AddDistributedMemoryCache();
@@ -20,6 +20,22 @@ builder.Services.AddSession(options =>
 });
 
 var app = builder.Build();
+
+// Seed the database with initial data
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    try
+    {
+        var context = services.GetRequiredService<BearcatBitesContext>();
+        DbInitializer.Initialize(context);
+    }
+    catch (Exception ex)
+    {
+        var logger = services.GetRequiredService<ILogger<Program>>();
+        logger.LogError(ex, "An error occurred while seeding the database.");
+    }
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
